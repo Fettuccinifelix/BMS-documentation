@@ -132,3 +132,17 @@ So with our first iterations of boards, we both ran into our own issues. However
 To resolve this, I separated the circuits for both ICs into 2 PCBs to essentially make sure that I didn't repeat that mistake, and to test each circuit separately. I also had multiple people review my new boards such that the layout and schematic made sense and were similar enough to their reference. This resulted in the following boards. If I had the time, I would create another iteration where I remerged the 2 circuits into a single board, but I will leave future work to whomever is working on the BMS this year. 
 
 [images of new boards]
+
+## 4.0 Safety information
+A lot of this is common sense, please don't electrocute and/or burn yourself :) 
+
+### 4.1 Electrical Safety
+- **Service Warning:** Before servicing, disconnect all power sources. Use a voltmeter to verify zero voltage before proceeding.
+- **Arc Flash Prevention:** Maintain a safe distance of at least 3 feet from the BMS during operation. Use insulated tools and avoid wearing metal jewelry when working near high-voltage terminals.
+- **Setup Warning:** Ensure batteries are not touching any part of the PCB aside from their intended connector to prevent any short circuiting when assembling the BMS for use.
+### 4.2 Thermal Safety
+- **Operating Temperatures:** The BMS is designed to operate within a temperature range of -10°C to 65°C. Operating far outside this range may cause system failure or reduced efficiency. 
+- **Thermal Runaway Protection:** The BMS is equipped with thermal sensors that will trigger a shutdown if the temperature exceeds 65°C. In case of an over-temperature event, the BMS will automatically disconnect the load until the system has cooled back into operating range. 
+### 4.3 Chemical Safety
+- **Battery Handling:** The batteries used alongside BMS to power GRASP are Li-Po batteries, handle all batteries with care to avoid punctures or ruptures. Use non-conductive materials for storage and transport to prevent short circuits.
+- **Emergency Procedures:** If chemical exposure occurs due to the Li-Po batteries, exercise caution when irrigating the affected area with water as the water may extend the burn by reacting with the lithium, causing an exothermic reaction. Instead, clean the area to the best of your ability and immediately seek medical attention.
