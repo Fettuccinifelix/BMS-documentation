@@ -6,8 +6,25 @@ The battery protection feature of this BMS stems from the use of a BQ7791502 pro
 
 The BQ77915 is a low-power battery management system (BMS) IC designed to provide a comprehensive suite of voltage, current, temperature protections and smart cell balancing for battery packs without the use of a microcontroller. The BQ77915 IC provides pack protection through integrated CHG and DSG low-side NMOS FET drivers. The IC is also capable of providing smart, passive cell balancing through integrated FETs for cell balancing currents up to 50 mA. Specifically, the BQ77915 protects against the following: overvoltage, undervoltage, overcurrent charge, overcurrent discharge, short circuit discharge, and over/under-temperature while charging and discharging.
 
-[image of protection circuit]
-[images of prot board layers]
+<div style="display: flex; justify-content: center; align-items: center;">
+    <img src="/assets/img/BMS/protsch.jpg" alt="prot schematic" style = "width = 90%; height = auto;">
+</div>
+
+<div style="display: flex; justify-content: center; align-items: center;">
+    <img src="/assets/img/BMS/protalllayer.JPG" alt="protall" style = "width = 90%; height = auto;">
+</div>
+
+<div style="display: flex; justify-content: center; align-items: center;">
+    <img src="/assets/img/BMS/protlayer 1.JPG" alt="prot1" style="width: 45%; height: auto; margin-right: 10px;">
+    <img src="/assets/img/BMS/prot layer 2.JPG" alt="prot2" style="width: 45%; height: auto;">
+</div>
+
+
+<div style="display: flex; justify-content: center; align-items: center;">
+    <img src="/assets/img/BMS/prot3d.JPG" alt="prot3d" style = "width = 90%; height = auto;">
+</div>
+
+
 
 ### Overvoltage protection
 > OV detection occurs when at least one of the cell voltages is measured above the OV threshold. In response, the CHG FET is turned off until the voltage of the cell that triggered the fault is below the OV threshold minus the OV hysteresis. 
@@ -50,7 +67,7 @@ The BQ77915 is a low-power battery management system (BMS) IC designed to provid
 > Cell balancing is performed by comparing the cell voltages with respect to cell balancing threshold voltages, evaluating the results of the comparison and controlling the cell balancing FET, which over a period of time will allow for closer cell voltages, thereby extending battery pack life. 
 
 ## Fuel Gauging (BQ34110) 
-
+>
 The Slave Board of the BMS is also responsible for keeping track of SOC and SOH, this is mainly done through the BQ34110 battery gas gauge, which is implemented into the board based on the BQ34110EVM-796 evaluation module and can communicate information to the Master Board through an I2C communication protocol
 
 The BQ34110 gas gauge uses Compensated End-of-Discharge Voltage (CEDV) technology to accurately predict battery capacity and other operational characteristics. It can be queried by a host processor to provide cell information such as remaining capacity, full charge capacity, and average current. The End of Service determination function of the BQ34110 monitors the health of the battery through the use of infrequent Learning Phases, which involves a controlled discharge of ~1% capacity, and provides an alert to the system when the battery is approaching the end of its usable service.
@@ -61,8 +78,22 @@ Communication with the device is provided through an I2C interface, supporting r
 
 (code is still WIP as of 10/05/2024)
 
-[image of FG circuit]
-[images of FG board layers]
+<div style="display: flex; justify-content: center; align-items: center;">
+    <img src="/assets/img/BMS/FGsch2.JPG" alt="fuel gauge schematic" style = "width = 90%; height = auto;">
+</div>
+<div style="display: flex; justify-content: center; align-items: center;">
+    <img src="/assets/img/BMS/FGalllayer.JPG" alt="fgall" style = "width = 90%; height = auto;">
+</div>
+
+<div style="display: flex; justify-content: center; align-items: center;">
+    <img src="/assets/img/BMS/FG1.JPG" alt="FG1" style="width: 45%; height: auto; margin-right: 10px;">
+    <img src="/assets/img/BMS/FG2.JPG" alt="FG2" style="width: 45%; height: auto;">
+</div>
+
+
+<div style="display: flex; justify-content: center; align-items: center;">
+    <img src="/assets/img/BMS/FG3d.JPG" alt="FG3D" style = "width = 90%; height = auto;">
+</div>
 
 ## Technical specifications
 
