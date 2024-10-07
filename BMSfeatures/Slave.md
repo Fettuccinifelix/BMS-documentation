@@ -79,7 +79,7 @@ Communication with the device is provided through an I2C interface, supporting r
 (code is still WIP as of 10/05/2024)
 
 <div style="display: flex; justify-content: center; align-items: center;">
-    <img src="/assets/img/BMS/FGsch2.JPG" alt="fuel gauge schematic" style = "width = 90%; height = auto;">
+    <img src="/assets/img/BMS/FGsch2.jpg" alt="fuel gauge schematic" style = "width = 90%; height = auto;">
 </div>
 <div style="display: flex; justify-content: center; align-items: center;">
     <img src="/assets/img/BMS/FGalllayer.JPG" alt="fgall" style = "width = 90%; height = auto;">
