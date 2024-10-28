@@ -152,7 +152,7 @@ A lot of this is *common sense &trade;*, just generally don't electrocute and/or
 
 ### 4.1 Electrical Safety
 - **Service Warning:** Before servicing, disconnect all power sources. Use a voltmeter to verify zero voltage before proceeding.
-- **Arc Flash Prevention:** Maintain a safe distance of at least 3 feet from the BMS during operation. Use insulated tools and avoid wearing metal jewelry when working near high-voltage terminals.
+- **Arc Flash Prevention:** Maintain a safe distance from the BMS during operation. Use insulated tools and avoid wearing metal jewelry when working near high-voltage terminals.
 - **Setup Warning:** Ensure batteries are not touching any part of the PCB aside from their intended connector to prevent any short circuiting when assembling the BMS for use.
 ### 4.2 Thermal Safety
 - **Operating Temperatures:** The BMS is designed to operate within a temperature range of -10°C to 65°C. Operating far outside this range may cause system failure or reduced efficiency. 
